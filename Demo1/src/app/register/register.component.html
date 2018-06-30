@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="bg-img">
+    <div class="container" align="center">
+      <h3>User Registration</h3>
+    <form #RegForm="ngForm">
+      <label for="name"><b>Name</b></label>
+      <input type="text" placeholder="Enter your Name" name="name" required ngModel>
+      
+      <label for="uname"><b>UserName</b></label>
+      <input type="text" placeholder="Enter User Name" name="uname" required ngModel>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required ngModel>
+      
+      <label for="mobile"><b>Mobile Number</b></label>
+      <input type="text" placeholder="Enter Mobile Number" name="mobile" required ngModel>
+      
+      <label for="email"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required ngModel>
+      <button type="submit" class="btn" (click)="submit(RegForm.value)">Register</button>
+      </form>
+         </div>
+         </div>
+</body>
+</html>
+
+<!--form #RegForm = "ngForm">
+    Name : <input type = "text" name = "name" ngModel><br>
+    Id : <input type = "number" name = "id"  ngModel><br>
+    Email:<input type="text" name="email" ngModel><br>
+    Mobile : <input type = "number" name = "mobile"  ngModel><br>
+    Password:<input type="password" name="password" ngModel><br>
+    <input type = "button" value = "update" (click)="submit(RegForm.value)">
+</form-->

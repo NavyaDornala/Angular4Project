@@ -1,0 +1,49 @@
+<!--html><body>
+<form #LogForm = "ngForm" align="center">
+    Id : <input type = "number" name = "id"  ngModel><br>
+    Password: <input type = "password" name = "password"   ngModel><br>
+    <input type = "button" value = "Login" (click)="authenticate(LogForm.value)">
+</form>
+</body></html-->
+
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="bg-img">
+    <div class="container"  align="center">
+    <div class = "content">
+    <img src="assets/images/admin.jpg"/>  
+      <h3>Admin Login</h3>
+      <form #LogForm="ngForm">
+      <label for="id"><b>Id</b></label>
+      <input type="text" placeholder="Enter your id" name="id" ngModel required>
+      <span class="error-msg" id="id error"></span>
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required ngModel>
+      <span class="error-msg" id="passwordErr"></span>
+      <button type="submit"class="btn" [disabled] = "LogForm.invalid" (click)= "authenticate(LogForm.value)">Login</button>
+      </form>
+      </div></div>
+     <div class="container"  align="center">
+     <div class="content">
+     <img src="assets/images/customer.jpg" style="width: 150px;height:125px;"/> 
+      <h3>User Login</h3>
+      <form #UserLogForm="ngForm">
+      <label for="uname"><b>User name</b></label>
+      <input type="text" placeholder="Enter your username" name="uname" required ngModel>
+      <span class="error-msg" id="uname error"></span>
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required ngModel>
+      <span class="error-msg" id="passwordErr"></span>
+      <button type="submit"class="btn"  (click)= "authUser(UserLogForm.value)">Login</button>
+      </form>
+     </div></div>
+ </div>
+ <router-outlet></router-outlet>
+</body>
+</html>

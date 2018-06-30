@@ -1,0 +1,75 @@
+<!--DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="navbar">
+
+  <a class="navbar-brand" href="https://www.freelogoservices.com/api/main/images/1j+0jl1FOMkX9WypfBe43D6kivKFrRFPnhnJwXs1M3EMoAJtlSIqgfRq8...44">
+  <img src="https://www.freelogoservices.com/api/main/images/1j+0jl1FOMkX9WypfBe43D6kivKFrRFPnhnJwXs1M3EMoAJtlSIqgfRq8...44" class = "img-fluid" width=100px></a>
+  <a routerLink="#">HOME</a>
+  <div class="dropdown">
+    <button class="dropbtn">EVENTS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a routerLink="wedding">Wedding</a>
+      <a routerLink="formal">Formal Parties</a>
+      <a routerLink="festival">Festivals</a>
+      <a routerLink="birthday">Birthday Parties</a>
+    </div>
+    </div>
+    <a routerLink="adminlogin">LOGIN</a>
+  <a routerLink="/register">REGISTER</a>
+  <a routerLink="eventreg">EVENTREG</a>
+  <a routerLink="about">ABOUT US</a>
+</div>
+<router-outlet></router-outlet></body>
+
+</html-->
+
+
+
+<html>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <a class="navbar-brand" href="https://www.freelogoservices.com/api/main/images/1j+0jl1FOMkX9WypfBe43D6kivKFrRFPnhnJwXs1M3EMoAJtlSIqgfRq8...44">
+  <img src="https://www.freelogoservices.com/api/main/images/1j+0jl1FOMkX9WypfBe43D6kivKFrRFPnhnJwXs1M3EMoAJtlSIqgfRq8...44" class = "img-fluid" width=100px></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">HOME<span class="sr-only">(current)</span></a>
+      </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     EVENTS</a>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" routerLink="wedding">Wedding</a>
+    <a class="dropdown-item" routerLink="festival">Festivals</a>
+    <a class="dropdown-item" routerLink="birthday">Birthday Parties</a>
+    <a class="dropdown-item" routerLink="formal">Formal Parties</a>
+  </div>
+   </li>
+   <li class="nav-item">
+        <a class="nav-link" routerLink="/adminlogin">LOGIN</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link"routerLink="/register">REGISTER</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link"routerLink="/about">ABOUT US</a></li>     
+    </ul>
+
+  </div>
+</nav>
+<router-outlet></router-outlet>
+</body>
+</html>

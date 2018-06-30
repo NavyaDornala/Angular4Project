@@ -1,0 +1,97 @@
+<!--!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<form action="#" #LogForm = "ngForm" align = "center">
+<br><br><br><br><br><br><br><br>
+<h2>Event Registration Form</h2>
+  <div class="container">
+    <label for="uname"><b>UserName</b></label>
+    <input type="text"  name="uname" required><br>
+    <label for="uname"><b>Event</b></label>
+    <input type="text"  name="event" required><br>
+    <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"><b> Decorations</b>
+      </label><br>
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"><b> Catering</b>
+      </label><br>
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"><b> Photography</b>
+      </label><br>
+      <label class="form-check-label">
+        <input class="form-check-input "type="checkbox"><b> Venue</b>
+      </label><br>
+      <div class="form-group">
+ <label ><b>Date:</b></label>
+ <input type="date" name="date" max="3000-12-31" 
+        min="1000-01-01" class="form-control">
+</div>
+     </div>
+     <div>   
+    <button type="submit">Submit</button>
+   </div>
+  <div class="container" style="background-color:#f1f1f1">
+  </div>
+</form>
+
+</body>
+</html-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<form action="#" #LogForm = "ngForm" align = "center">
+
+  <div class="container">
+  <div class="content">
+  <h3>Event Registration Form</h3>
+    <label for="uname"><b>USERNAME</b></label>
+    <input type="text"  name="uname" placeholder= "Enter User Name " required ngModel><br><br>
+ 
+<div class="input-group mb-3">
+  <label for="events"><b>EVENTS</b></label><br><br><br><br>
+  <select class="custom-select" name = "event" id="inputGroupSelect03" ngModel>
+    <option selected>Select an Event</option>
+    <option value="weddings" ngModel>Wedding</option>
+    <option value="birthdays" ngModel>Birthday</option>
+    <option value="festivals" ngModel>Festivals</option>
+    <option value="formal" ngModel>Formal Party</option>
+    
+  </select>
+</div>
+    <label class="form-check-label"><b>SERVICES</b></label><br><br>
+        <input class="form-check-input" value="yes" type="checkbox" name="decoration" ngModel><b> Decorations</b>
+      <br>
+      <label class="form-check-label">
+        <input class="form-check-input "value="yes" type="checkbox" name="catering" ngModel><b> Catering</b>
+      </label><br>
+      <label class="form-check-label">
+        <input class="form-check-input" value="yes" type="checkbox" name="photography" ngModel><b> Photography</b>
+      </label><br>
+      <label class="form-check-label">
+        <input class="form-check-input" value="yes" type="checkbox" name="venue" ngModel><b> Venue</b>
+      </label><br><br>
+      <div class="form-group">
+ <label ><b>DATE</b></label><br>
+ <input type="text" name="date" placeholder="yyyy-mm-dd" class="form-control" required ngModel>
+</div>
+<br>
+
+    <button type="submit" class="btn" (click)="submit(LogForm.value)">Submit</button>
+    </div>
+    </div>
+    </form>
+    </body>
+</html>
+

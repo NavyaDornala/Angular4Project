@@ -1,0 +1,21 @@
+<br><button (click) ="getAll($event)" align="center">Show Registrations</button>
+
+<table align="center" border=1>
+<tr>
+<th>Name</th>
+<th>Event     </th>
+<th>Decoration</th>
+<th>Catering</th>
+<th>Photography</th>
+<th>Venue  </th>
+<th>Date  </th>
+</tr>
+<tr *ngFor= "let a of data">
+<td>{{a.uname}}</td>
+<td>{{a.event}}</td>
+<td>{{a.decoration}}</td>
+<td>{{a.catering}}</td>
+<td>{{a.photography}}</td>
+<td>{{a.venue}}</td>
+<td>{{a.date}}</td></tr>
+</table>
